@@ -53,7 +53,7 @@ export default function Home() {
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-5">
                     {products.map((product) => (
                         <section key={product.id} className="w-full flex flex-col justify-between items-center">
-                            <Link to={`/products/${product.id}`}>
+                            <Link className="flex flex-col items-center" to={`/products/${product.id}`}>
                                 <img
                                     className="w-full rounded-lg max-h-70 max-w-70 mb-2"
                                     src={product.cover}
